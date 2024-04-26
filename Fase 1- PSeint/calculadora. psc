@@ -1,0 +1,12 @@
+Proceso  descuento
+	Definir cantidad,desc Como Real;  
+	
+	Escribir "Ingrese un valor:"
+	Leer cantidad
+	
+	Escribir "Ingrese el descuento a realizar: "
+	Leer desc
+	
+	Escribir "Precio final con descuento: ", cantidad
+	
+FinProceso

@@ -1,0 +1,33 @@
+Proceso  indiceMasa
+	Definir peso Como Entero;  
+	Definir altura,IMC Como Real;
+	
+	Escribir "Ingrese el valor de su peso: "
+	Leer peso;
+	
+	Escribir "Ingrese el valor de su altura: "
+	Leer altura;
+	
+	IMC = peso / (altura)^2;
+	
+	Si IMC = 18.5 | IMC = 24.9 Entonces
+		Escribir "Se encuentra entre una clasificación normal, con un valor de: ", IMC
+	SiNo 
+		Si IMC = 25 | IMC = 29.9 Entonces
+			Escribir "Se encuentra entre una clasificación con sobrepeso, con un valor de: ", IMC
+		SiNo
+			Si IMC = 30 | IMC = 34.9 Entonces
+				Escribir "Se encuentra en una clasificación con obesidad de grado I, con un valor de: ", IMC
+			SiNo
+				Si IMC = 35 | IMC = 39.9 Entonces
+					Escribir "Se encuentra en una clasificación con obesidad de grado II, con un valor de: ", IMC
+				SiNo
+					Si IMC <40 Entonces
+						Escribir "Se encuentra en una clasificación con obesidad de grado III, con un valor de: ", IMC
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+FinProceso

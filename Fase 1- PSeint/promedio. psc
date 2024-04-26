@@ -1,0 +1,18 @@
+Proceso promedio
+	Definir nota, total, canti Como Real
+	Escribir "Ingrese la cantidad de notas para promediar"
+	Leer canti
+
+	cunt = canti
+	Mientras cunt >= 1  Hacer
+		Escribir "Ingrese el valor de la nota"
+		Leer nota;
+		
+		resultado = resultado + nota;
+		cunt =  cunt-1;
+				
+	Fin Mientras
+	Escribir "Su promedio es: ", resultado/canti 
+
+FinProceso
+	
